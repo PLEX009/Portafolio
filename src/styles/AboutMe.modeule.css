@@ -1,0 +1,129 @@
+/* About Me Section */
+.about-section {
+    background-color: #0a0a0a;
+    padding: 3rem 2rem;
+
+}
+
+.about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Section Label */
+.section-label {
+    color: #4a7ba7;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.about-name {
+    color: #ffffff;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+/* About Content */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* About Text */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-description {
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 500;
+}
+
+.about-paragraph {
+    color: #999;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Education Card */
+.education-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.education-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.education-institution {
+    color: #ccc;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+}
+
+.education-date {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .about-name {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-description {
+        font-size: 1.1rem;
+    }
+
+    .about-paragraph {
+        font-size: 1rem;
+    }
+
+    .education-card {
+        padding: 2rem;
+    }
+
+    .education-title {
+        font-size: 1.25rem;
+    }
+}

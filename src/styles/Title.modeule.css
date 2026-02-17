@@ -1,0 +1,177 @@
+/* Hero Section */
+.hero-section {
+    background-color: #0a0a0a;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.hero-container {
+    max-width: 1400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Download CV Button */
+.download-cv {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+
+.download-cv:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-name {
+    font-size: clamp(3.5rem, 8vw, 5.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    color: #999;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.social-btn {
+    background: #0077b5;
+    color: #ffffff;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-btn.linkedin {
+    background: #0077b5;
+}
+
+.social-btn.github {
+    background: #2ea44f;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-btn.linkedin:hover {
+    background: #006399;
+}
+
+.social-btn.github:hover {
+    background: #2c8e43;
+}
+
+/* Tech Icons */
+.tech-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tech-icons img {
+    width: 42px;
+    height: 42px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.15) translateY(-5px);
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .download-cv {
+        margin-bottom: 2rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .social-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tech-icons {
+        gap: 1rem;
+    }
+
+    .tech-icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,128 @@
+/* Skills Section */
+.skills-section {
+    background-color: #0a0a0a;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Label */
+.section-label {
+    color: #4a7ba7;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* Skill Card */
+.skill-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skill-name {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    padding-top: 3rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    color: #666;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 3rem 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+
+    .skill-name {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
